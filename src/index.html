@@ -15,24 +15,36 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="assets/icon.jpg" />
 
     <!-- Todo: put here your site title -->
-    <title>[Your name here] | Developer</title>
+    <title>Arya Wibowo Jati | Developer</title>
     <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
+    <meta
+      name="keywords"
+      content="jateez, Arya Wibowo Jati, Arya Jati,
+    javascript, laravel, portfolio, backend, fullstack, developer"
+    />
     <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+    <meta
+      name="description"
+      content="Arya Wibowo Jati | Fullstack Developer | Backend Developer | Software Engineer "
+    />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="styles.scss" />
     <script
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
     <!-- Todo: remove the below script once you finish your portfolio -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
@@ -45,10 +57,11 @@
     <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
       <div class="container">
-        <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
+        <h1 class="hero-title load-hidden" id="typewriter-text">
+          Hi!<span class="wave">👋</span><br />My name is
+          <span class="text-color-main">Arya Wibowo Jati</span>
           <br />
-          I'm the Unknown Developer.
+          I'm a <span id="developer-role"></span>
         </h1>
         <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
@@ -71,7 +84,7 @@
                 class="img-fluid rounded shadow-lg"
                 height="auto"
                 width="300px"
-                src="assets/profile.jpg"
+                src="assets/4x5copy.jpg"
                 alt="Profile Image"
               />
             </div>
@@ -79,18 +92,25 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you have!
+                🚀 Greetings! I'm Arya, an Information System Student at
+                Universitas Brawijaya.<br />🌐I'm passionate about programming,
+                particularly in the realm of web development, currently working
+                hard to be the next "that" engineer in the future. 💻✨
+                <br />I'm here for the tech adventure. Ready to connect and make
+                waves in the digital realm? Let's do this! 🌊🚀
               </p>
               <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
+                🌟 Beyond the Code: K-POP, Anime, and Football Vibes! ⚽🎶<br />
+                🌸 Obsessed with NewJeans, Twice, and the rollercoaster of
+                supporting Manchester United. Let's connect over our fandom
+                adventures! 🚀🎤⚽
               </p>
               <span class="d-flex mt-3">
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--resume"
-                  href="assets/resume.pdf"
+                  href="https://bit.ly/aryadev-resume"
                 >
                   View Resume
                 </a>
@@ -112,12 +132,33 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
+                <h3 class="project-wrapper__text-title">Todoo App</h3>
                 <div>
                   <p class="mb-4">
-                    Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: 
-                    complement the information: the skills learned or reinforced in its realization and how you faced it, 
-                    prove to be proactive in the search for solutions.
+                    Led and coordinated the team in researching, designing, and
+                    implementing a user-friendly To-Do list app, which served as
+                    the final project for the web programming class.
+                    <br />During this project, I deepened my knowledge of HTML,
+                    CSS, PHP, Laravel, and relational databases (MySQL). I also
+                    acquired expertise in collaborative development using Git
+                    with GitLab as its platform and communication skills in the
+                    process.<br />The project received a score of 95 out of 100,
+                    fulfilling all 3 out of 3 requirements set by the lecturer.
+                  </p>
+                  <!-- Comment -->
+                  <!-- Describe the project being very specific, you can use the
+                    Twitter standard: no more than 280 characters: complement
+                    the information: the skills learned or reinforced in its
+                    realization and how you faced it, prove to be proactive in
+                    the search for solutions.
+ -->
+                  <p class="mb-4">
+                    🛠️ Tech Stacks used: <br />
+                    <i class="fa-brands fa-php"></i> PHP -
+                    <i class="fa-brands fa-laravel"></i>
+                    Laravel -
+                    <i class="fa-brands fa-bootstrap"></i> Bootstrap 5 -
+                    <i class="fa-solid fa-database"></i> MySQL
                   </p>
                 </div>
                 <a
@@ -132,15 +173,19 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
-                >
+                  href="https://github.com/jateez/todoo-app"
+                  ><i class="fa-brands fa-github"></i>
                   Source Code
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a
+                  rel="noreferrer"
+                  href="https://github.com/jateez/todoo-app"
+                  target="_blank"
+                >
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -151,7 +196,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/todoo-app.png"
                     />
                   </div>
                 </a>
@@ -164,12 +209,33 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
+                <h3 class="project-wrapper__text-title">Bookshelf API</h3>
                 <div>
                   <p class="mb-4">
-                    Demonstrate in this description the skills of a programmer: such as having commitment, 
-                    having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, 
-                    you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
+                    Bookshelf API is a RESTful service developed using Node.js
+                    and @hapi, designed to empower users in managing their book
+                    collections. Throughout its development, I honed essential
+                    skills in creating, reading, updating, and deleting data
+                    through designed endpoints. <br />This project emerged from
+                    the Dicoding Learning to Create Back-End Applications for
+                    Beginners course, where I not only delved into the
+                    intricacies of Node.js but also gained proficiency in
+                    applying ESLint style and testing API Endpoints with
+                    Postman. Notably, the API excelled in meeting all main and
+                    optional requirements, earning a perfect score of 5 out of
+                    5.
+                  </p>
+                  <!-- Comment -->
+                  <!-- Demonstrate in this description the skills of
+                    a programmer: such as having commitment, having perseverance
+                    and accepting alternative solutions. Remember that being a
+                    portfolio you are not selling the project, you are selling
+                    yourself, it reflects the resources used: Frameworks,
+                    libraries, platforms, etc.
+ -->
+                  <p class="mb-4">
+                    🛠️ Tech Stacks used: <br />
+                    <i class="fa-brands fa-node-js"></i> Node.js
                   </p>
                 </div>
                 <a
@@ -184,15 +250,19 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
-                >
+                  href="https://github.com/jateez/bookshelf-api-dicoding"
+                  ><i class="fa-brands fa-github"></i>
                   Source Code
                 </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a
+                  rel="noreferrer"
+                  href="https://github.com/jateez/bookshelf-api-dicoding"
+                  target="_blank"
+                >
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -203,7 +273,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/bookshelf.jpg"
                     />
                   </div>
                 </a>
@@ -216,12 +286,102 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
+                <h3 class="project-wrapper__text-title">Lib-Karangturi</h3>
                 <div>
                   <p class="mb-4">
-                    If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
-                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.
+                    Crafted a user-friendly website for the Karangturi Village
+                    Library Community under the Brawijaya University Mahasiswa
+                    Mengabdi Desa program. Collaborating with my teammate, I
+                    leveraged HTML, CSS, PHP, Laravel Frameworks, and Bootstrap
+                    5. <br />In a short period of two weeks, while concurrently
+                    participating in other social voluntary works for the
+                    village, I designed, developed, and implemented the website
+                    independently. <br />The platform empowered the community by
+                    facilitating efficient information sharing, thereby
+                    enhancing public awareness of the village library's valuable
+                    resources.
                   </p>
+                  <p class="mb-4">
+                    🛠️ Tech Stacks used: <br />
+                    <i class="fa-brands fa-php"></i> PHP -
+                    <i class="fa-brands fa-laravel"></i>
+                    Laravel -
+                    <i class="fa-brands fa-bootstrap"></i> Bootstrap 5 -
+                    <i class="fa-solid fa-database"></i> MySQL
+                  </p>
+                </div>
+                <!-- Comment -->
+                <!--  If the project was collaborative, reflect it in
+                    this description, that will demonstrate communication and/or
+                    leadership skills. Additionally, if you made use of the
+                    mastery of a second language, it will reflect on you
+                    professionalism.
+                   -->
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="#!"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/jateez/laravel-library-karangturi"
+                  ><i class="fa-brands fa-github"></i>
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a
+                  rel="noreferrer"
+                  href="https://github.com/jateez/laravel-library-karangturi"
+                  target="_blank"
+                >
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/lib-karangturi.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Personal Website</h3>
+                <div>
+                  <p class="mb-4">
+                    You are currently viewing the implementation of the project.
+                    <span class="wave">👋</span><br />
+                  </p>
+                  <p class="mb-4">
+                    🛠️ Tech Stacks used: <br />
+                    <i class="fa-brands fa-node-js"></i> Node.js -
+                    <i class="fa-brands fa-bootstrap"></i> Bootstrap 5
+                  </p>
+                  <!-- Comment -->
+                  <!--   If the project was collaborative, reflect it in this
+                    description, that will demonstrate communication and/or
+                    leadership skills. Additionally, if you made use of the
+                    mastery of a second language, it will reflect on you
+                    professionalism. -->
                 </div>
                 <a
                   rel="noreferrer"
@@ -236,7 +396,7 @@
                   target="_blank"
                   class="cta-btn text-color-main"
                   href="#!"
-                >
+                  ><i class="fa-brands fa-github"></i>
                   Source Code
                 </a>
               </div>
@@ -254,7 +414,7 @@
                     <img
                       alt="Project Image"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/personal_website.png"
                     />
                   </div>
                 </a>
@@ -272,13 +432,15 @@
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
+          <p class="contact-wrapper__text">
+            🔧 Ready to Build Something Together? Let's Make Ideas Come to Life!
+          </p>
           <a
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
+            href="mailto:aryajati@student.ub.ac.id"
+            >📬 Shoot me an email</a
           >
         </div>
       </div>
@@ -292,14 +454,22 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
+          <a
+            rel="noreferrer"
+            href="https://twitter.com/aryathegood"
+            target="_blank"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-linkedin fa-inverse"></i>
+          <a
+            rel="noreferrer"
+            href="https://linkedin.com/in/aryajati-dev"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-github fa-inverse"></i>
+          <a rel="noreferrer" href="https://github.com/jateez" target="_blank">
+            <i class="fa-brands fa-github"></i>
           </a>
         </div>
 
@@ -307,34 +477,15 @@
 
         <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
         <p class="footer__text">
-          © 2021 - Template developed by
+          © 2023 - Developed by
+          <a rel="noreferrer" href="https://github.com/jateez" target="_blank"
+            >Arya Wibowo Jati</a
+          >
+          - Huge thanks to
           <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
-            >Jacobo Martínez</a
+            >Jacobo Martinez</a
           >
-        </p>
-
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            rel="noreferrer" 
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobiwave/simplefolio on GitHub"
-            >Star</a
-          >
+          for this template!
         </p>
       </div>
     </footer>
