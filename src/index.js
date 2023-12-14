@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const initialText = developerRoleSpan.textContent.trim();
   
       // Define your array of keywords
-      const keywords = ["Web Developer.", "Software Engineer.", "Back-End Developer.", "Fullstack Developer."];
+      const keywords = ["Software Engineer.", "Fullstack Developer.", "Back-End Developer."];
   
       // Create a typewriter instance
       const typewriter = new Typewriter(developerRoleSpan, {
